@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from .models import Ingredient, IngredientList
+from . import models
 
-admin.site.register(Ingredient)
-admin.site.register(IngredientList)
+admin.site.register(models.Ingredient)
+admin.site.register(models.IngredientList)
+admin.site.register(models.Recipe)

@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Списки ингредиентов</title>
-</head>
-<body>
-    <ul>
+{% extends 'recipes/base.html' %}
+
+{% block content %}
+<ul>
     {% for ingredient_list in ingredient_lists %}
-        <li>{{ ingredient_list.name }}</li>
+    <li>{{ ingredient_list.name }}</li>
     {% endfor %}
-    </ul>
-</body>
-</html>
+</ul>
+{% endblock %}
